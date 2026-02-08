@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог Будущего | Полезные Знания</title>
+    <style>
+        /* ЗАЩИТА ОТ ВЫДЕЛЕНИЯ ТЕКСТА */
+        body { 
+            -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; margin: 0; background: #f0f2f5; color: #1c1e21; 
+        }
+        header { background: #1e3c72; color: white; padding: 50px 20px; text-align: center; }
+        .container { max-width: 1100px; margin: 30px auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 180px; object-fit: cover; }
+        .card-body { padding: 15px; }
+        .btn { display: block; text-align: center; background: #1e3c72; color: white; padding: 10px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        footer { text-align: center; padding: 20px; color: #777; font-size: 14px; }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <header>
+    <h1>Интеллектуальное пространство</h1>
+    <p>3 глубоких статей для твоего развития. Всё бесплатно и легально.</p>
+</header>
+
+<div class="container">
+    <div class="grid" id="main-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=500" alt="Учеба">
+            <div class="card-body">
+                <h3>Как учиться в 10 раз быстрее</h3>
+                <p>Метод Фейнмана: пойми любую тему за 4 шага.</p>
+                <a href="articles/free1.html" class="btn">Читать далее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500" alt="Деньги">
+            <div class="card-body">
+                <h3>Финансы в 16 лет</h3>
+                <p>Как заложить фундамент богатства прямо сейчас.</p>
+                <a href="articles/art3.html" class="btn">Читать далее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500" alt="Отдых">
+            <div class="card-body">
+                <h3>Наука отдыха</h3>
+                <p>Как перезагрузить мозг за 10 минут без гаджетов.</p>
+                <a href="articles/art4.html" class="btn">Читать далее</a>
+            </div>
+        </div>
+        
+        </div>
+</div>
+
+<footer>
+    &copy; 2026. Все материалы защищены. Копирование запрещено.
+</footer>
+
+<script>
+    // Запрет горячих клавиш (Ctrl+C, Ctrl+U и т.д.)
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 85 || e.keyCode === 83)) {
+            return false;
+        }
+    };
+</script>
+
+</body>
+</html>
